@@ -14,12 +14,14 @@ ActiveRecord::Schema.define(:version => 20110223134721) do
   create_table "articles", :force => true do |t|
     t.string   "name"
     t.string   "content"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "comments", :force => true do |t|
     t.string   "content"
+    t.integer  "article_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

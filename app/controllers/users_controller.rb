@@ -1,3 +1,3 @@
 class UsersController < ApplicationController
-  active_scaffold :comment
+  active_scaffold :user
 end

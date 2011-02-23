@@ -2,6 +2,7 @@ class CreateComments < ActiveRecord::Migration
   def self.up
     create_table :comments do |t|
       t.string :content
+      t.integer :article_id
 
       t.timestamps
     end
