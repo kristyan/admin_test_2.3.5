@@ -1,2 +1,19 @@
 ==  Rails 2.3.5 app for testing active scaffold
 
+== To Run This app
+
+==  using RVM switch to ruby version 1.8.7
+rvm 1.8.7
+
+== create database
+create a mysql DB called admin_test_2
+
+== run the migration
+rake db:migrate
+
+== start the server
+script/server
+
+== Access the admin tool
+goto localhost:3000/users
+
